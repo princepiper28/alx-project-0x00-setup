@@ -2,15 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Pill from "./Pill";
 
-import HOUSE_IMAGE from "@/public/assets/images/house.png";
-import STAR_IMAGE from "@/public/assets/images/star.png";
-
 const Card: React.FC = () => {
   return (
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg">
       <Image
         className="rounded-lg"
-        src={HOUSE_IMAGE}
+        src="/assets/images/house.png"
         width={378.56}
         height={299.37}
         alt="house image"
@@ -30,24 +27,19 @@ const Card: React.FC = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <Image src="/assets/images/star.png" width={20} height={20} alt="star" />
           <p className="font-medium text-[17px] ml-2">4.76</p>
         </div>
       </div>
       <div className="flex justify-between mt-4">
         <div className="grid grid-cols-3 border w-[156px] rounded-full px-2 py-1">
           <div className="flex items-center">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- truncated for brevity -->
-            </svg>
             <p className="ml-1 text-[12.95px] font-medium">4</p>
           </div>
           <div className="flex items-center">
-            <!-- another icon here -->
             <p className="ml-1 text-[12.95px] font-medium">2</p>
           </div>
           <div className="flex items-center">
-            <!-- another icon here -->
             <p className="ml-1 text-[12.95px] font-medium">2-4</p>
           </div>
         </div>
@@ -60,4 +52,5 @@ const Card: React.FC = () => {
 };
 
 export default Card;
+
  
